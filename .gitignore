@@ -84,3 +84,4 @@ yarn-error.log*
 next-env.d.ts
 
 CLAUDE.local.md
+/src/generated/prisma
