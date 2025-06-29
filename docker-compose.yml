@@ -1,25 +1,6 @@
 version: '3.8'
 
 services:
-  postgres:
-    image: postgres:16-alpine
-    container_name: money-graph-db
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: money_graph
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - money-graph-network
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-
   claude-code:
     build:
       context: .
@@ -59,8 +40,6 @@ volumes:
     name: claude-code-bashhistory
   claude-code-config:
     name: claude-code-config
-  postgres_data:
-    name: money-graph-postgres-data
 
 networks:
   money-graph-network:

@@ -39,6 +39,14 @@ Financial expense tracking app: upload credit card statements → AI categorizat
 - Use `host.docker.internal` for host connections
 - Database connections should account for containerized environment
 
+## TDD Workflow
+- Write tests first based on expected input/output pairs
+- Run tests to confirm they fail (no implementation yet)
+- Commit tests when satisfied
+- Write code to pass tests without modifying tests
+- Iterate until all tests pass
+- Commit implementation code
+
 ## Notes for Claude
 - Run TypeScript compiler after code changes
 - Use tRPC testing utilities for API testing

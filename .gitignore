@@ -59,7 +59,15 @@ src/main/resources/dist/*
 /coverage
 
 # next.js
-/.next/
+target/
+dist/
+logs/
+public/
+.cache/
+.vscode/
+.next/
+yarn-error.log/
+npm-debug.log/
 
 # production
 /build
@@ -85,3 +93,8 @@ next-env.d.ts
 
 CLAUDE.local.md
 /src/generated/prisma
+
+/agents/plans/*
+!/agents/plans/.gitkeep
+/agents/reviews/*
+!/agents/reviews/.gitkeep
