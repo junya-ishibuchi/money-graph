@@ -5,6 +5,7 @@
 - Tailwind CSS
 - tRPC for API
 - PostgreSQL + Prisma ORM
+- Supabase for database and authentication
 - Jest + Testing Library, Vitest + tRPC Testing
 - Vercel deployment
 
@@ -32,6 +33,11 @@ Financial expense tracking app: upload credit card statements → AI categorizat
 - Unit tests: parsers, AI logic, utilities (Jest)
 - Integration tests: tRPC procedures, database ops (Vitest)
 - Component tests: critical UI interactions
+
+## Development Environment
+- Running in Docker container
+- Use `host.docker.internal` for host connections
+- Database connections should account for containerized environment
 
 ## Notes for Claude
 - Run TypeScript compiler after code changes
